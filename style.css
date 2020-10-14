@@ -1,3 +1,7 @@
+body {
+  font-family: "Gochi Hand", cursive;
+}
+
 #container {
   display: grid;
   grid-auto-flow: row;
@@ -7,20 +11,27 @@
   column-gap: 20px;
   width: 400px;
   margin: auto;
-  /* align-items: center; */
 }
 
 .balloon {
-  /* justify-self: center; */
-  background-color: teal;
   height: 80px;
   width: 80px;
   border-radius: 50%;
 }
+
 .popped {
   height: 80px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   transform: translateY(25px);
+}
+
+.display-text {
+  font-size: 100px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
 }
