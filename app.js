@@ -1,5 +1,6 @@
 const balloonCount = 24;
 let popCounter = 0;
+const container = document.querySelector("#container");
 const colors = [
   "radial-gradient(circle at 35% 25%, #80d8ff 6%, #40c4ff 20%, #00b0ff 45%, #01579b 100%)",
   "radial-gradient(circle at 35% 25%, #ff9e80 6%, #ff6e40 20%, #ff3d00 45%, #bf360c 100%)",
@@ -7,8 +8,6 @@ const colors = [
   "radial-gradient(circle at 35% 25%, #b9f6ca 6%, #69f0ae 20%, #00e676 45%, #1b5e20 100%)",
   "radial-gradient(circle at 35% 25%, #ea80fc 6%, #e040fb 20%, #d500f9 45%, #4a148c 100%)",
 ];
-
-const container = document.querySelector("#container");
 
 // Create balloons
 for (let i = 0; i < balloonCount; ++i) {
